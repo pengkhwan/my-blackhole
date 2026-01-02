@@ -1,20 +1,19 @@
-! --- 1. เว็บปกติที่โดนแฮกมาทำหน้าเว็บพนัน (Hacked Sites) ---
-||mabelsbbq.com^
-||basscancercenter.com^
-||khao555.com^
+! --- 1. กลุ่มคำต้องห้าม (เจอคำพวกนี้ บล็อกทันที ไม่สนว่ามีตัวเลขไหม) ---
+! ใครตั้งชื่อโดเมนมีคำพวกนี้ คือซวย (ยอมแลก)
+/.*(ufa|pgslot|baccarat|sagame|sexys|ambbet|cazino|lotto|หวย|พนัน|แทงบอล).*/
 
-! --- 2. บล็อกแบบเจาะจง (เว็บย่อลิงก์ หรือชื่อสั้นๆ ที่ Regex อาจจับพลาด) ---
+! --- 2. กลุ่มคำเสี่ยง + มีตัวเลข (เจอคำนี้ + มีเลขอะไรก็ได้ บล็อกหมด) ---
+! เช่น win88, auto1, play99 (แต่ winner.com รอด เพราะไม่มีเลข)
+/.*(bet|win|play|game|auto|slot|club|fox|lion|tiger|dragon|king|god|rich|super|vip).*[0-9].*/
+
+! --- 3. ดัก Domain นามสกุลโจร (ที่มีตัวเลขผสม) ---
+! อะไรก็ตามที่มีตัวเลข แล้วลงท้ายด้วย .cc, .vip, .bet
+/.*[0-9].*\.(cc|vip|bet|online|xyz|pro|info)/
+
+! --- 4. ดักเลขตอง/เลขมงคล (อยู่ตรงไหนของชื่อก็โดน) ---
+/.*(888|999|777|666|555|168|789|365|24hr).*/
+
+! --- 5. เก็บตกพวกเว็บสั้นๆ หรือเว็บย่อลิงก์ ---
 ||ibit.ly^
-||lionth.online^
-||baccarat-xe.com^
-||ufafox88.cc^
-||*w88*^
-||*yes8*^
-||*m98*^
-||*dk7*^
-
-! --- 3. Regex รวมญาติ (สูตร 4.0 อัปเดต Sawan, Fox, Dafa, Happy ครบจบ) ---
-/.*(vip|bet|win|play|game|auto|slot|club|ufa|pg|amb|lion|sexy|sagame|aff|mammoth|sawan|bk|fun|dafa|happy|huc|sora|fafa|fox|siam).*(88|77|66|99|168|365|789|289).*/
-
-! --- 4. Regex ดักโดเมนลงท้ายด้วยเลข (กันเหนียว) ---
-/.*(88|77|99|66|168|365|789)\.(cc|com|net|online|co|th|vip|xyz)/
+||bit.ly^
+||cutt.ly^
