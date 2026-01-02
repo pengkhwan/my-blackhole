@@ -1,5 +1,11 @@
+! --- บล็อกตรงๆ ---
 ||ibit.ly^
 ||lionth.online^
 ||baccarat-xe.com^
-/.*(vip|bet|win|play|game|auto|slot|club|ufa|pg|amb|lion|sexy|sagame|aff).*(88|77|66|99).*/
-||*ufa*88*^
+||ufafox88.cc^
+
+! --- Regex แบบระบุชื่อ (สูตรเดิม + เพิ่ม mammoth) ---
+/.*(vip|bet|win|play|game|auto|slot|club|ufa|pg|amb|lion|sexy|sagame|aff|mammoth).*(88|77|66|99).*/
+
+! --- (ของใหม่) Regex ดักพวกที่เอาเลขไว้ท้ายโดเมน (เช่น mammoth88.cc) ---
+/.*(88|77|99|66)\.(cc|com|net|online)/
