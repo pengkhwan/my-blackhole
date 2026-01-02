@@ -2,3 +2,4 @@
 ||lionth.online^
 ||baccarat-xe.com^
 /.*(vip|bet|win|play|game|auto|slot|club|ufa|pg|amb|lion|sexy|sagame|aff).*(88|77|66|99).*/
+||*ufa*88*^
